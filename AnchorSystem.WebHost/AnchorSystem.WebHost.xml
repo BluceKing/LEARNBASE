@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnchorSystem.WebHost</name>
+    </assembly>
+    <members>
+        <member name="T:AnchorSystem.WebHost.Controllers.TokenAuthController">
+            <summary>
+            授权验证
+            </summary>
+        </member>
+        <member name="M:AnchorSystem.WebHost.Controllers.TokenAuthController.Auth">
+            <summary>
+            获取授权
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AnchorSystem.WebHost.MapperProfile.AnchorSystemMapperProfile">
+            <summary>
+             系统 视图mapper 反射
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.WebHost.Startup">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="M:AnchorSystem.WebHost.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            将服务添加到容器
+            </summary>
+        </member>
+        <member name="M:AnchorSystem.WebHost.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            配置HTTP请求管道
+            </summary>
+        </member>
+    </members>
+</doc>

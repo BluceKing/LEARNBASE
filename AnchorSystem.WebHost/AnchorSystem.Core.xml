@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnchorSystem.Core</name>
+    </assembly>
+    <members>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.IpWhitelist">
+            <summary>
+            IP白名单管理
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.IpWhitelist.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.IpWhitelist.IpAddress">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.IpWhitelist.LastOperator">
+            <summary>
+            最后的操作人
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.IpWhitelist.LastOperatingTime">
+            <summary>
+            最后的操作时间
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.IpWhitelist.IsUsing">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.EnumLoginLogType">
+            <summary>
+            登录日志类型
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.EnumLoginLogType.Success">
+            <summary>
+            登录成功
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.EnumLoginLogType.UserIsLock">
+            <summary>
+            账号锁定
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.EnumLoginLogType.PassWordError">
+            <summary>
+            密码错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.EnumLoginLogType.UserIpError">
+            <summary>
+            未授权的IP
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog">
+            <summary>
+            后台账号登陆日志
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.LoginTime">
+            <summary>
+            登陆时间
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.Ip">
+            <summary>
+            登陆Ip信息
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.IpArea">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.LoginUrl">
+            <summary>
+            登录域名
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.LoginLogType">
+            <summary>
+            登陆日志类型
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.TenantId">
+            <summary>
+            商户
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.LoginLogs.LoginLog.UserId">
+            <summary>
+            账号ID
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord">
+            <summary>
+            操作记录
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.Id">
+            <summary>
+            自增主键
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.OperatingObject">
+            <summary>
+            此次操作的对象
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.Operator">
+            <summary>
+            执行操作的人
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.OperatingTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.MarkDownText">
+            <summary>
+            MarkDown文本
+            可以在此使用MarkDown记录详细操作
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.OperatorType">
+            <summary>
+            操作类别
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.OperatorDetailsType">
+            <summary>
+            操作详细类别
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperationRecord.OperatorIp">
+            <summary>
+            操作Ip
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperatorDetailsType">
+            <summary>
+            操作记录类别枚举
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperatorType">
+            <summary>
+            操作类别
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperatorType.Create">
+            <summary>
+            新增数据
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperatorType.Update">
+            <summary>
+            更新数据
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperatorType.Delete">
+            <summary>
+            删除数据
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.OperationRecords.OperatorType.System">
+            <summary>
+            系统
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.AppMenu">
+            <summary>
+            固定权限
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Menu">
+            <summary>
+            最上级菜单
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Menu.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Menu.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Menu.PerCodeId">
+            <summary>
+            权限代码 唯一
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Menu.Permissions">
+            <summary>
+            所属权限
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerCodeConst">
+            <summary>
+            权限列表
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerCodeConst.Client">
+            <summary>
+            客户账号
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerCodeConst.Manager">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerCodeConst.Sa">
+            <summary>
+            超管
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerCodeConst.SystemManager">
+            <summary>
+            系统管理
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerCodeType">
+            <summary>
+            权限类别
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLevel">
+            <summary>
+            权限等级
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLevel.All">
+            <summary>
+            通用
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLevel.Clients">
+            <summary>
+            客户账号
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLevel.Manager">
+            <summary>
+            管理员账号
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLevel.SuperManager">
+            <summary>
+            超级管理员
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLimit">
+            <summary>
+            限制
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLimit.All">
+            <summary>
+            没有限制 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLimit.Manager">
+            <summary>
+            管理账号才能拥有的权限
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.PerLimit.Clients">
+            <summary>
+            客户账号才能拥有的权限
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission">
+            <summary>
+            页面权限
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.Name">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.PerCodeId">
+            <summary>
+            权限代码 唯一
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.MenuId">
+            <summary>
+            所属菜单ID
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.PerLevel">
+            <summary>
+            权限等级
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.PerLimit">
+            <summary>
+            权限限制
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.PerCodeType">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.ParentId">
+            <summary>
+            所属上级权限
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Permissions.Permission.Menu">
+            <summary>
+            所属菜单
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Roles.AdminRole">
+            <summary>
+            账号角色
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Roles.AdminRole.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Roles.AdminRole.IsSystem">
+            <summary>
+            是否系统角色 为TRUE 时不能删除
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser">
+            <summary>
+            后台账号
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.Description">
+            <summary>
+            账号备注
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.Online">
+            <summary>
+            是否在线
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.CreateTime">
+            <summary>
+            账号创建时间
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.UserType">
+            <summary>
+            账号类型
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.WhiteIps">
+            <summary>
+            IP白名单
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.LastLoginTime">
+            <summary>
+            最近登录时间
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.LastLoginIp">
+            <summary>
+            上次登录Ip
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.LastEditPasswordTime">
+            <summary>
+            上次修改密码时间
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.AnchorSystemAuthDb.Users.AdminUser.ActiveTime">
+            <summary>
+            活跃时间
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.AnchorSystemAuthDb.UserType">
+            <summary>
+            后台账号类型
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.UserType.Manager">
+            <summary>
+            管理员账号
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.AnchorSystemAuthDb.UserType.Client">
+            <summary>
+            客户主账号
+            </summary>
+            
+        </member>
+        <member name="T:AnchorSystem.Core.Converter.BjDateTimeOffsetConverter">
+            <summary>
+            DateTimeOffset转换为北京时间
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.Converter.BjDateTimeOffsetNullConverter">
+            <summary>
+            DateTimeOffset转换为北京时间
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.Exceptions.ApiErrorCode">
+            <summary>
+            ApiErrorCode
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.DataDuplication">
+            <summary>
+            数据重复
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.Submittingdataincorrect">
+            <summary>
+            提交数据有误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.Datadoesnotexist">
+            <summary>
+            数据不存在 修改或者删除时 触发
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.CreateUserFailed">
+            <summary>
+            新增账号时失败
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.EditUserPagePerFailed">
+            <summary>
+            更新账号页面权限时失败
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.ChangePasswordFailed">
+            <summary>
+            更新账号密码时失败
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.ChangeVipPasswordFailed">
+            <summary>
+            更新会员账号密码时失败
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.LoginFailed">
+            <summary>
+            登陆失败 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.LoginExpired">
+            <summary>
+            登陆已经失效 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.UnauthorizedIp">
+            <summary>
+            无效白名单 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.InvalidTwoFactor">
+            <summary>
+            验证码无效 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.NeedTwoFactor">
+            <summary>
+            需要验证码 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.InvalidDomain">
+            <summary>
+            无效的域名 
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.UserTypeError">
+            <summary>
+            账号类型错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.LockedOut">
+            <summary>
+            登陆失败次数过多,账号已锁定
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.GeeTestError">
+            <summary>
+            极验验证错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.账号不存在">
+            <summary>
+            账号不存在
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.请求服务器时出错">
+            <summary>
+            未知异常
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.提交数据错误">
+            <summary>
+            提交数据错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.令牌错误">
+            <summary>
+            令牌错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.数据不存在">
+            <summary>
+            数据不存在
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.签名回调错误">
+            <summary>
+            请求支付通道 PaymentService_Channel_001失败
+            </summary>
+            <summary>
+            签名回调错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.密钥错误">
+            <summary>
+            密钥错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.银行卡转账银行配置错误">
+            <summary>
+            银行卡转账银行配置错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.系统支付接口不能删除">
+            <summary>
+            系统支付接口不能删除
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.生成银行账号支付宝二维码错误">
+            <summary>
+            生成银行账号支付宝二维码错误
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.订单已超时">
+            <summary>
+            订单已超时
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.权限不足">
+            <summary>
+            权限不足
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.请求上传图片接口失败">
+            <summary>
+            请求上传图片接口失败
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.Exceptions.ApiErrorCode.上传图片失败">
+            <summary>
+            上传图片失败
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.Exceptions.ApiResult`1">
+            <summary>
+            API 返回结果
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.ApiResult`1.Success">
+            <summary>
+            请求成功
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.ApiResult`1.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.ApiResult`1.ErrorCode">
+            <summary>
+            错误代码 如果是空值
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.ApiResult`1.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.ApiResult`1.TraceId">
+            <summary>
+            HTTP请求ID
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.ApiResult`1.Host">
+            <summary>
+            服务器主机名称
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.Exceptions.BaseExtensions">
+            <summary>
+            常用扩展
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.Exceptions.UserFriendlyException.Details">
+            <summary>
+            Additional information about the exception.
+            </summary>
+        </member>
+        <member name="M:AnchorSystem.Core.Exceptions.UserFriendlyException.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="message">Exception message</param>
+        </member>
+        <member name="M:AnchorSystem.Core.Exceptions.UserFriendlyException.#ctor(System.Object,AnchorSystem.Core.Exceptions.ApiErrorCode,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="message">错误信息</param>
+            <param name="errorCode">错误码</param>
+            <param name="httpStatusCode">响应码</param>
+            <param name="islog">是否记录日志</param>
+        </member>
+        <member name="T:AnchorSystem.Core.SystemConst.SystemSetting">
+            <summary>
+            系统设定参数
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.SystemConst.SystemSetting.VerificationId">
+            <summary>
+            极验Id
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.SystemConst.SystemSetting.VerificationKey">
+            <summary>
+            极验密钥
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.SystemConst.SystemSetting.UploadApi">
+            <summary>
+            上传图片地址
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.SystemConst.SystemSetting.UploadApiBasicAuthConfig">
+            <summary>
+            上传图片验证参数
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Core.SystemConst.UploadApiBasicAuthConfig">
+            <summary>
+            上传图片验证参数
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.SystemConst.UploadApiBasicAuthConfig.UserName">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:AnchorSystem.Core.SystemConst.UploadApiBasicAuthConfig.PassWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.SystemConst.WebConst.AnchorSystemAuthDb">
+            <summary>
+            系统后台
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Core.SystemConst.WebConst.系统权限">
+            <summary>
+            系统权限
+            </summary>
+        </member>
+    </members>
+</doc>

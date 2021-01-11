@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnchorSystem.Application</name>
+    </assembly>
+    <members>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.PagePermission">
+            <summary>
+            页面权限 如会员管理页面
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.ManagePermission">
+            <summary>
+            管理权限  如会员资料修改
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.UserId">
+            <summary>
+            账号主键ID
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.UserName">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.UserType">
+            <summary>
+            账号类型
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.SecurityStampClaimType">
+            <summary>
+            SecurityStampClaimType
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.OperatingMode">
+            <summary>
+            后台验证模式 0无 1操作密码 2双重验证
+            </summary>
+        </member>
+        <member name="F:AnchorSystem.Application.AgentSystemClaimTypes.AutoLogin">
+            <summary>
+            是否记住账号
+            </summary>
+        </member>
+        <member name="T:AnchorSystem.Application.Ip2RegionService">
+            <summary>
+            Ip2RegionService
+            </summary>
+        </member>
+        <member name="M:AnchorSystem.Application.Ip2RegionService.GetIpArea(System.String)">
+            <summary>
+            读取IP地区信息
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

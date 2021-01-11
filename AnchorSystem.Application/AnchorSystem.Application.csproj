@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\AnchorSystem.WebHost\AnchorSystem.Application.xml</DocumentationFile>
+    <OutputPath>bin\</OutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnchorSystem.EntityFrameworkCore\AnchorSystem.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>
